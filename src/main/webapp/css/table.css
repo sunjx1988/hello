@@ -1,0 +1,15 @@
+.table tbody tr:hover{
+    background-color: #e8e8e8;
+}
+
+table.dataTable{
+    border-collapse:collapse;
+}
+
+.navbar-form .form-group{
+    width: 80%;
+}
+
+.navbar-form ,.navbar-form .form-group .form-control{
+    width: 100%;
+}

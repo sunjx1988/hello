@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95ef0969-4c1c-452c-8dfc-b1f7c6d3f806" name="Default" comment="" />
+    <list default="true" id="95ef0969-4c1c-452c-8dfc-b1f7c6d3f806" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../hello/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../hello/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/../hello/out/" />
     <ignored path="$PROJECT_DIR$/../hello/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -934,7 +936,7 @@
       <workItem from="1509502991960" duration="6615000" />
       <workItem from="1509524604703" duration="2296000" />
       <workItem from="1509590664125" duration="4942000" />
-      <workItem from="1509608662826" duration="3751000" />
+      <workItem from="1509608662826" duration="4281000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交">
       <created>1509417861259</created>
@@ -985,7 +987,21 @@
       <option name="project" value="LOCAL" />
       <updated>1509612404641</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="idea配置">
+      <created>1509612426808</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1509612426808</updated>
+    </task>
+    <task id="LOCAL-00009" summary=".idea目录不提交git">
+      <created>1509612940533</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1509612940533</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1021,7 +1037,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143304000" />
+    <option name="totallyTimeSpent" value="143834000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1054,11 +1070,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293556" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32856005" sideWeight="0.49560702" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32856005" sideWeight="0.49560702" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277645" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293556" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32856005" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3258786" sideWeight="0.495671" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3258786" sideWeight="0.495671" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25586355" sideWeight="0.504329" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1130,7 +1146,8 @@
     <MESSAGE value="提交pom文件" />
     <MESSAGE value="新增多线程内容" />
     <MESSAGE value="idea配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="idea配置" />
+    <MESSAGE value=".idea目录不提交git" />
+    <option name="LAST_COMMIT_MESSAGE" value=".idea目录不提交git" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

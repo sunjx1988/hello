@@ -937,7 +937,7 @@
       <workItem from="1509502991960" duration="6615000" />
       <workItem from="1509524604703" duration="2296000" />
       <workItem from="1509590664125" duration="4942000" />
-      <workItem from="1509608662826" duration="4363000" />
+      <workItem from="1509608662826" duration="4439000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交">
       <created>1509417861259</created>
@@ -1009,7 +1009,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509612961799</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary=".idea目录不提交git">
+      <created>1509613035889</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1509613035889</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1045,7 +1052,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143916000" />
+    <option name="totallyTimeSpent" value="143992000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

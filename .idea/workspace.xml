@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95ef0969-4c1c-452c-8dfc-b1f7c6d3f806" name="Default" comment="首次提交">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../hello/src/main/java/com/jxsun/thread/ConsumerAndProducter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../hello/src/main/java/com/jxsun/thread/PipeInputStreamAndOutputStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../hello/src/test/java/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../hello/src/test/java/com/thread/Test.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../hello/.idea/artifacts/hello_war_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../hello/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../hello/.idea/workspace.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../hello/pom.xml" afterPath="$PROJECT_DIR$/../hello/pom.xml" />
+    <list default="true" id="95ef0969-4c1c-452c-8dfc-b1f7c6d3f806" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../hello/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../hello/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/../hello/out/" />
     <ignored path="$PROJECT_DIR$/../hello/target/" />
@@ -1023,7 +1016,7 @@
       <workItem from="1509502991960" duration="6615000" />
       <workItem from="1509524604703" duration="2296000" />
       <workItem from="1509590664125" duration="4942000" />
-      <workItem from="1509608662826" duration="3613000" />
+      <workItem from="1509608662826" duration="3732000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交">
       <created>1509417861259</created>
@@ -1053,7 +1046,21 @@
       <option name="project" value="LOCAL" />
       <updated>1509528093228</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="新增多线程内容">
+      <created>1509612311919</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1509612311920</updated>
+    </task>
+    <task id="LOCAL-00006" summary="idea配置">
+      <created>1509612370495</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1509612370495</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1089,7 +1096,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143166000" />
+    <option name="totallyTimeSpent" value="143285000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1196,7 +1203,9 @@
     <MESSAGE value="线程的几种停止方法" />
     <MESSAGE value="不加入版本控制的文件" />
     <MESSAGE value="提交pom文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交pom文件" />
+    <MESSAGE value="新增多线程内容" />
+    <MESSAGE value="idea配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="idea配置" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

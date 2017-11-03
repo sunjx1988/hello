@@ -9,7 +9,7 @@ public class ThreadExceptionTest {
 
         Thread thread = new Thread();
 
-        //在线程中使用UncaughtExceptionHandler 对指定线程中的异常进行处理
+        //对指定线程中的异常进行处理
         thread.setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
             @Override
             public void uncaughtException(Thread t, Throwable e) {

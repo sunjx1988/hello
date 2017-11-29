@@ -4,6 +4,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.jxsun.mybatis.entity.User;
 import com.jxsun.mybatis.mapper.custom.UserCustomMapper;
+import com.jxsun.service.param.QueryUserCondition;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -27,5 +28,11 @@ public class UserServiceImpl implements UserService {
     @Override
     public void save(User user) {
         userCustomMapper.insert(user);
+    }
+
+    @Override
+    public PageInfo<User> queryByCondition(QueryUserCondition condition) {
+        PageHelper.startPage(condition.getPageNo(),condition.getPageSize());
+        return new PageInfo<User>(userCustomMapper.queryByCondition(condition));
     }
 }

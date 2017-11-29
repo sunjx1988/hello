@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/aop
-       http://www.springframework.org/schema/aop/spring-aop.xsd">
+       http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- 基于xml aop start -->
+    <!--
+    <bean id="myAdvice" class="com.jxsun.aop.Advice"></bean>
+
     <aop:config>
-        <!-- 声明切面 -->
+        &lt;!&ndash; 声明切面 &ndash;&gt;
         <aop:aspect id="myAspect" ref="myAdvice">
 
-            <!-- 声明切入点 aop.service包下的所有包所有类所有方法 -->
+            &lt;!&ndash; 声明切入点 aop.service包下的所有包所有类所有方法 &ndash;&gt;
             <aop:pointcut id="myPointCut" expression="execution(* com.jxsun.aop.service.*.*(..))" />
 
-            <!-- 通知类型 -->
+            &lt;!&ndash; 通知类型 &ndash;&gt;
             <aop:before method="doBefore" pointcut-ref="myPointCut" />
             <aop:after method="doAfter" pointcut-ref="myPointCut" />
             <aop:after-returning method="afterReturnning" pointcut-ref="myPointCut" returning="rt"/>
@@ -25,12 +28,16 @@
         </aop:aspect>
 
     </aop:config>
+    -->
     <!-- 基于xml aop end -->
 
+    <!-- 基于注解 aop start -->
+    <context:annotation-config />
+    <context:component-scan base-package="com.jxsun.aop" />
+    <aop:aspectj-autoproxy/>
+    <!-- 基于注解 aop end   -->
 
-
-    <bean id="myAdvice" class="com.jxsun.aop.Advice"></bean>
-
+    <bean id="annotationAspect" class="com.jxsun.aop.AnnotationAspect"></bean>
     <bean id="targetService" class="com.jxsun.aop.service.TargetService"></bean>
 
 </beans>

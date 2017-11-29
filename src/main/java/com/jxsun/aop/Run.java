@@ -21,6 +21,6 @@ public class Run {
 
         targetService.doSomeThing();
 
-        targetService.throwMethod();
+//        targetService.throwMethod();
     }
 }

@@ -19,8 +19,10 @@ public class Run {
     public static void main(String[] args) {
         TargetService targetService = ctx.getBean(TargetService.class);
 
-        targetService.doSomeThing();
+//        targetService.doSomeThing();
 
 //        targetService.throwMethod();
+
+        targetService.doAnyThing();
     }
 }

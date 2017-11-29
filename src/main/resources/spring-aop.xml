@@ -35,7 +35,10 @@
     <aop:aspectj-autoproxy/>
     <!-- 基于注解 aop end   -->
 
-    <bean id="annotationAspect" class="com.jxsun.aop.AnnotationAspect"></bean>
+<!--    <bean id="annotationAspect" class="com.jxsun.aop.AnnotationAspect"></bean>-->
+
+    <!-- 自定义注解 -->
+    <bean id="loggingAspect" class="com.jxsun.aop.LoggingAspect"></bean>
     <bean id="targetService" class="com.jxsun.aop.service.TargetService"></bean>
 
 </beans>

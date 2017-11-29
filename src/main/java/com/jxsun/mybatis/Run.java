@@ -17,7 +17,7 @@ public class Run {
 
     static {
         try {
-            reader = Resources.getResourceAsReader("mybatis.xml");
+            reader = Resources.getResourceAsReader("mybatis.xml.bak");
             sqlSessionFactory = new SqlSessionFactoryBuilder().build(reader);
         } catch (Exception e) {
             e.printStackTrace();

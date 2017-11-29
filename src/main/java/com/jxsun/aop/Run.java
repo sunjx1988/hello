@@ -1,6 +1,6 @@
 package com.jxsun.aop;
 
-import com.jxsun.aop.service.XmlService;
+import com.jxsun.aop.service.TargetService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -17,7 +17,10 @@ public class Run {
     }
 
     public static void main(String[] args) {
-        XmlService xmlService = ctx.getBean(XmlService.class);
-        xmlService.doSomeThing();
+        TargetService targetService = ctx.getBean(TargetService.class);
+
+        targetService.doSomeThing();
+
+        targetService.throwMethod();
     }
 }

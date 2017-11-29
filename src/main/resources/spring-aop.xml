@@ -7,22 +7,30 @@
        http://www.springframework.org/schema/aop
        http://www.springframework.org/schema/aop/spring-aop.xsd">
 
+    <!-- 基于xml aop start -->
     <aop:config>
         <!-- 声明切面 -->
-        <aop:aspect id="myAspect" ref="xmlBean">
+        <aop:aspect id="myAspect" ref="myAdvice">
 
             <!-- 声明切入点 aop.service包下的所有包所有类所有方法 -->
-            <aop:pointcut id="pointCut" expression="execution(* com.jxsun.aop.service.*.*(..))" />
+            <aop:pointcut id="myPointCut" expression="execution(* com.jxsun.aop.service.*.*(..))" />
 
             <!-- 通知类型 -->
-            <aop:before method="doBefore" pointcut-ref="pointCut" />
+            <aop:before method="doBefore" pointcut-ref="myPointCut" />
+            <aop:after method="doAfter" pointcut-ref="myPointCut" />
+            <aop:after-returning method="afterReturnning" pointcut-ref="myPointCut" returning="rt"/>
+            <aop:after-throwing method="afterThrowing" pointcut-ref="myPointCut" throwing="ex"/>
+            <aop:around method="around" pointcut-ref="myPointCut"  />
 
         </aop:aspect>
 
     </aop:config>
+    <!-- 基于xml aop end -->
 
-    <bean id="xmlBean" class="com.jxsun.aop.XmlBean"></bean>
 
-    <bean class="com.jxsun.aop.service.XmlService"></bean>
+
+    <bean id="myAdvice" class="com.jxsun.aop.Advice"></bean>
+
+    <bean id="targetService" class="com.jxsun.aop.service.TargetService"></bean>
 
 </beans>

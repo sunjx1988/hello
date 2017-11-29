@@ -32,8 +32,6 @@
     <!-- 基于xml aop end -->
 
     <!-- 基于注解 aop start -->
-    <context:annotation-config />
-    <context:component-scan base-package="com.jxsun.aop" />
     <aop:aspectj-autoproxy/>
     <!-- 基于注解 aop end   -->
 

@@ -3,7 +3,7 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
-    <typeAliases>
+<!--    <typeAliases>
         <typeAlias alias="User" type="com.jxsun.mybatis.entity.User" />
     </typeAliases>
 
@@ -22,5 +22,5 @@
     <mappers>
         <mapper resource="mybatis/mapper/gen/UserMapper.xml" />
         <mapper resource="mybatis/mapper/custom/UserCustomMapper.xml" />
-    </mappers>
+    </mappers>-->
 </configuration>

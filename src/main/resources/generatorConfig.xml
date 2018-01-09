@@ -14,9 +14,9 @@
         </commentGenerator>
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://jx.sun:3306/procedure_test"
-                        userId="root"
-                        password="000000"/>
+                        connectionURL="jdbc:mysql://jx.sun:8066/TESTDB"
+                        userId="test"
+                        password="test"/>
 
 		<!-- entity -->
         <javaModelGenerator targetPackage="com.jxsun.mybatis.entity" targetProject="D:\hello\src\main\java">

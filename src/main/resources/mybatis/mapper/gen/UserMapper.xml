@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.jxsun.mybatis.mapper.gen.UserMapper" >
   <resultMap id="BaseResultMap" type="com.jxsun.mybatis.entity.User" >
-    <id column="id" property="id" jdbcType="INTEGER" />
+    <id column="id" property="id" jdbcType="VARCHAR" />
     <result column="name" property="name" jdbcType="VARCHAR" />
     <result column="dept" property="dept" jdbcType="VARCHAR" />
     <result column="website" property="website" jdbcType="VARCHAR" />
@@ -56,9 +56,13 @@
     </if>
   </select>
   <insert id="insert" parameterType="com.jxsun.mybatis.entity.User" >
-    insert into user (id, name, dept, 
+    <!-- 使用mycat 的全局序列生成的主键 -->
+    <selectKey resultType="string" keyProperty="id" order="BEFORE">
+      SELECT next value for MYCATSEQ_USER
+    </selectKey>
+    insert into user (id, name, dept,
       website, phone)
-    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{dept,jdbcType=VARCHAR}, 
+    values (#{id,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{dept,jdbcType=VARCHAR}, 
       #{website,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.jxsun.mybatis.entity.User" >
@@ -82,7 +86,7 @@
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
       <if test="id != null" >
-        #{id,jdbcType=INTEGER},
+        #{id,jdbcType=VARCHAR},
       </if>
       <if test="name != null" >
         #{name,jdbcType=VARCHAR},

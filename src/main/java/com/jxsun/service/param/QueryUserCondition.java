@@ -5,7 +5,7 @@ package com.jxsun.service.param;
  */
 public class QueryUserCondition {
 
-    private int pageSize = 5;
+    private int pageSize = 10;
 
     private int pageNo = 1;
 

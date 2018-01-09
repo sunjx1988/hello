@@ -2,13 +2,10 @@ package com.jxsun.mybatis;
 
 import com.github.pagehelper.PageInfo;
 import com.jxsun.mybatis.entity.User;
-import com.jxsun.mybatis.mapper.custom.UserCustomMapper;
 import com.jxsun.service.UserService;
 import com.jxsun.service.param.QueryUserCondition;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import java.util.List;
 
 /**
  * Created by sunjx on 2017/11/29.
@@ -37,21 +34,25 @@ public class MybatisAndSpringRun {
         UserService userService = ctx.getBean(UserService.class);
 
         //新增用户
-//        User u = new User();
-//        u.setDept("开发");
-//        u.setName("sun");
-//        u.setPhone("1110");
-//        u.setWebsite("www.abc.com");
-//        userService.save(u);
+        for (int i = 0; i < 100000; i++) {
+            User u = new User();
+            u.setDept("开发");
+            u.setName("sun" + Math.random());
+            u.setPhone("1110");
+            u.setWebsite("www.abc.com");
+            userService.save(u);
 //
-//        System.out.println("新用户ID" + u.getId());
+            System.out.println("新用户ID: " + u.getId());
+        }
+
 
         //分页查询
 //        PageInfo<User> pageInfo = userService.list(2,1);
 
         QueryUserCondition condition = new QueryUserCondition();
-        condition.setLikeName("s");
-        condition.setEqName(new String[]{"sun","11"});
+        condition.setPageSize(1000);
+        condition.setLikeName("");
+//        condition.setEqName(new String[]{"sun","11"});
 
         PageInfo<User> pageInfo = userService.queryByCondition(condition);
 

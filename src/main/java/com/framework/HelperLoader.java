@@ -1,7 +1,6 @@
 package com.framework;
 
-import com.framework.helper.ClassHelper;
-import com.framework.helper.ConfigHelper;
+import com.framework.helper.*;
 import com.framework.util.ClassUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,7 +17,10 @@ public final class HelperLoader {
 
             Class<?>[] classList = {
                     ConfigHelper.class,
-                    ClassHelper.class
+                    ClassHelper.class,
+                    BeanHelper.class,
+                    IocHelper.class,
+                    ControllerHelper.class
             };
 
             for (Class<?> cls : classList){

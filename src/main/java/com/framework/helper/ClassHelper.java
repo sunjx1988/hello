@@ -1,7 +1,10 @@
 package com.framework.helper;
 
+import com.framework.annotation.Controller;
+import com.framework.annotation.Service;
 import com.framework.util.ClassUtil;
 
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -24,6 +27,15 @@ public final class ClassHelper {
     }
 
     /**
-     *
+     * 根据class获取类
      */
+    public static Set<Class<?>> getClassByType(Class clz){
+        Set<Class<?>> classSet = new HashSet<Class<?>>();
+        for (Class<?> cls : CLASS_SET){
+            if(cls.isAnnotationPresent(clz)){
+                classSet.add(cls);
+            }
+        }
+        return classSet;
+    }
 }

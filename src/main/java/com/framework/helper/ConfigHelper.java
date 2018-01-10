@@ -2,6 +2,7 @@ package com.framework.helper;
 
 import com.framework.ConfigConstant;
 import com.framework.util.PropsUtil;
+import org.apache.commons.lang.StringUtils;
 
 import java.util.Properties;
 
@@ -17,5 +18,16 @@ public final class ConfigHelper {
      */
     public static String getAppBasePackage(){
         return PropsUtil.getString(PROPERTIES_PROPS, ConfigConstant.APP_BASE_PACKAGE, "");
+    }
+
+    /**
+     * 获取jsp页面路径
+     */
+    public static String getAppJspPath(){
+        String jspPath = PropsUtil.getString(PROPERTIES_PROPS, ConfigConstant.APP_JSP_PATH, "");
+        if(!StringUtils.endsWith(jspPath,"/")){
+            jspPath += "/";
+        }
+        return jspPath;
     }
 }

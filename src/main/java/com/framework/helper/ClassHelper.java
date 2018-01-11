@@ -38,4 +38,17 @@ public final class ClassHelper {
         }
         return classSet;
     }
+
+    /**
+     * 根据super class获取类
+     */
+    public static Set<Class<?>> getClassBySuperType(Class superClass){
+        Set<Class<?>> classSet = new HashSet<Class<?>>();
+        for (Class<?> cls : CLASS_SET){
+            if(superClass.isAssignableFrom(cls) && !cls.equals(superClass)){
+                classSet.add(cls);
+            }
+        }
+        return classSet;
+    }
 }

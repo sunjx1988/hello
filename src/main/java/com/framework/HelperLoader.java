@@ -16,9 +16,9 @@ public final class HelperLoader {
         try {
 
             Class<?>[] classList = {
-                    ConfigHelper.class,
                     ClassHelper.class,
                     BeanHelper.class,
+                    AopHelper.class,
                     IocHelper.class,
                     ControllerHelper.class
             };
